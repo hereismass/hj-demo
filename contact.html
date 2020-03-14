@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo webiste</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a id="link_homepage" href="index.html">Homepage</a>
+      <a id="link_products" href="products.html">Products</a>
+      <a id="link_contact" class="active" href="contact.html">Contact</a>
+    </header>
+    <section>
+      <h1 id="title">Contact me</h1>
+
+      <p id="description">
+        If you want to send me a nice message, i'll be sure to read it!
+      </p>
+
+      <form id="contact" action="contact.html">
+        <label for="fullname">Your name</label>
+        <input type="text" placeholder="Your name" id="fullname-field" />
+
+        <label for="message">Your message</label>
+        <textarea placeholder="Your message" id="message-field"></textarea>
+
+        <label for="pet-field">Your preferred pet</label>
+        <select id="pet-field">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+
+        <div id="contact-checkbox">
+          <input type="checkbox" id="website-field" checked />
+          <label for="website-field"
+            >You agree this is the best website ever</label
+          >
+        </div>
+
+        <button type="submit">Send form</button>
+      </form>
+    </section>
+
+    <script src="https://hotjar-tasks.gitlab.io/dev-task-massimo/widget.js"></script>
+  </body>
+</html>
